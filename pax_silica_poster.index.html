@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NO TO PAX SILICA</title>
+
+<style>
+body {
+  background: #f7f1df;
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: #183d2b;
+  color: #f6d66b;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+button {
+  background: #24543a;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #c39b24;
+  color: #183d2b;
+}
+
+.panel {
+  display: none;
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+#paksa {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>NO TO PAX SILICA!</h1>
+  <h3>ANG ATING LUPA. ANG ATING KARAPATAN.
+  ANG ATING KINABUKASAN.</h3>
+  <p>Huwag isakripisyo ang ating likas na yaman
+  para lamang sa pag-unlad na iilan lamang
+  ang makikinabang.</p>
+</header>
+
+<button onclick="showTab('paksa')">PAKSA</button>
+<button onclick="showTab('layon')">LAYON</button>
+<button onclick="showTab('imahen')">IMAHEN</button>
+<button onclick="showTab('panawagan')">PANAWAGAN</button>
+
+<div id="paksa" class="panel">
+  <h2>ANO ANG PAX SILICA?</h2>
+  <p>Ang Pax Silica ay isang inisyatiba na
+  naglalayong palakasin ang pagtutulungan
+  sa pandaigdigang supply chain ng silicon.</p>
+</div>
+
+<div id="layon" class="panel">
+  <h2>LAYON NG ADVOKASIYA</h2>
+  <p>Isulong ang responsableng pag-unlad,
+  pangangalaga sa kalikasan, at paggalang
+  sa karapatan ng mga komunidad.</p>
+</div>
+
+<div id="imahen" class="panel">
+  <h2>IMAHEN</h2>
+  <p>Ang mga larawan ng kagubatan, ilog,
+  kabundukan, at sakahan ay sumasagisag
+  sa ating likas na yaman na dapat pangalagaan.</p>
+</div>
+
+<div id="panawagan" class="panel">
+  <h2>AMING PANAWAGAN</h2>
+  <p>Hinihiling namin ang masusing pagsusuri,
+  malinaw na konsultasyon, at pangangalaga
+  sa kapakanan ng mamamayan at kalikasan.</p>
+</div>
+
+<script>
+function showTab(tabName) {
+  document.querySelectorAll(".panel").forEach(panel => {
+    panel.style.display = "none";
+  });
+
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html>
